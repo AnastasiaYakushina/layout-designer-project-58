@@ -1,19 +1,19 @@
 @font-face {
     font-weight: 400;
     font-family: 'Open Sans';
-    src: url("../../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
+    src: url("./../assets/fonts/OpenSans-VariableFont_wdth,wght.ttf");
   }
 
   @font-face {
     font-weight: 700;
     font-family: 'Open Sans';
-    src: url("../../assets/fonts/OpenSans-Bold.ttf");
+    src: url("./../assets/fonts/OpenSans-Bold.ttf");
   }  
 
 @font-face {
     font-weight: 400;
     font-family: Neucha;
-    src: url("../../assets/fonts/Neucha-Regular.ttf");
+    src: url("./../assets/fonts/Neucha-Regular.ttf");
 }
 
   body {
@@ -49,6 +49,7 @@
   }
   
   .content {
+    position: relative;
     padding: 100px 165px;
   }
   
