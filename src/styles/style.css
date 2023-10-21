@@ -67,7 +67,7 @@
     width: 1440px;
     height: 100%;
     
-    background-image: url('../../assets/background.png');
+    background-image: url('./../assets/background.png');
     background-repeat: no-repeat;
     background-size: cover;
 
