@@ -35,6 +35,7 @@
 
   h1 {
     font-size: 72px;
+    font-weight: 400;
     position: relative;
     margin-bottom: 181px;
   }
@@ -79,7 +80,7 @@
   .main-img {
     position: absolute;
     top: 55px;
-    right: -130px;
+    left: 461px;
     z-index: 1;
 
     height: 525px;
