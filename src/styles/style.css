@@ -26,15 +26,16 @@
   h1,
   h2,
   h3 {
+    margin: 0;
+    padding: 0;
     font-family: Neucha, serif;
     line-height: 1.2em;
   }
 
   h1 {
     font-size: 72px;
-    margin: 0;
-    padding: 0;
     position: relative;
+    margin-bottom: 174px;
   }
 
   h2 {
@@ -76,13 +77,9 @@
   .main_img {
     position: absolute;
     top: 55px;
-    left: 461px;
+    right: -130px;
 
     height: 525px;
-  }
-
-  .main_text {
-    margin-top: 170px;
   }
 
   .flex {
@@ -111,4 +108,57 @@
     color: #fff;
     font-weight: bold;
   }
+
+  .artical_video {
+    position: relative;
+    height: 814px;
+  }
+
+  .video {
+    filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+  }
+
+  .center {
+    text-align: center;
+  }
+
+  .flex_nav {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 20px;
+    background: #42413C;
+  }
+
+  .flex_nav_item {
+    box-sizing: border-box;
+    width: 350px;
+    height: 323px;
+    padding: 24px;
+    background:#F5F4F0;
+  }
+
+  .row-2 {
+    height: 348px;
+  }
+
+  .nav_item_title {
+    padding: 0;
+    background-color: transparent;
+    font-size: 50px;
+    color: #fff;
+  }
+
+  .num {
+    margin-bottom: 40px;
+    font-size: 64px;
+    line-height: 1em;
+    font-family: Neucha;
+  }
+
+  .text_nav {
+    padding-top: 16px;
+  }
+
+
 
