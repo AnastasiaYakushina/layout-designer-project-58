@@ -17,6 +17,8 @@
 }
 
   body {
+    margin: 0;
+    padding: 0;
     width: 1440px;
     height: 100%;
     font: 16px/1.6em 'Open Sans', sans-serif;
@@ -78,6 +80,7 @@
     position: absolute;
     top: 55px;
     right: -130px;
+    z-index: 1;
 
     height: 525px;
   }
@@ -91,6 +94,10 @@
 
   .item-flex {
     width: 540px;
+  }
+  .main-title {
+    position: relative;
+    z-index: 2;
   }
 
   .main-link {
