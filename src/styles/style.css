@@ -19,7 +19,7 @@
   body {
     margin: 0;
     padding: 0;
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     font: 16px/1.6em 'Open Sans', sans-serif;
     color: #2a2626;
@@ -36,7 +36,7 @@
     font-size: 72px;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 181px;
+    margin-bottom: 181.2px;
   }
 
   h2 {
@@ -109,7 +109,7 @@
     box-sizing: border-box;
     
     width: 148px;
-    height: 49px;
+    height: 48px;
     padding: 12px 0;
 
     text-align: center;
