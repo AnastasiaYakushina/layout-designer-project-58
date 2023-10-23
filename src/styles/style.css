@@ -36,7 +36,6 @@
     font-size: 72px;
     font-weight: 400;
     margin-top: 0;
-    margin-bottom: 181px;
   }
 
   h2 {
@@ -87,6 +86,7 @@
 
   .flex {
     display: flex;
+    margin-top: 181.2px;
     flex-wrap: wrap;
     gap: 40px 30px;
     justify-content: flex-end;
