@@ -36,6 +36,7 @@
     font-size: 72px;
     font-weight: 400;
     margin-top: 0;
+    margin-bottom: 181.2px;
   }
 
   h2 {
@@ -85,8 +86,7 @@
   }
 
   .flex {
-    display: flex;
-    margin-top: 181.2px;
+    display: flex;  
     flex-wrap: wrap;
     gap: 40px 30px;
     justify-content: flex-end;
@@ -97,8 +97,8 @@
   }
 
   .item-flex p:last-child {
-      margin-bottom: 0px;
-    }
+    margin-bottom: 0;
+  }
 
   .main-title {
     position: relative;
@@ -170,6 +170,27 @@
   .text-nav {
     padding-top: 16px;
   }
+
+  .flex-img-description {
+    display: flex; 
+    column-gap: 30px;
+    margin-bottom: 100px; 
+  }
+
+  .flex-column {
+    display: flex;
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+
+  .flex-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .bg-brown {
+    background-color:#B09A81;
+  }
+  
 
 
 
