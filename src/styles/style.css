@@ -200,9 +200,11 @@
   
   .section-img {
     position: relative;
+    vertical-align: middle;
   }
 
   .theme {
+    margin: 0;
     color: var(--translucen-dark);
     font-size: 24px;
     font-family: Neucha, serif;
@@ -213,7 +215,7 @@
   }
 
   .section-name {
-    font-weight: normal;
+    font-weight: 400;
   }
 
   .section-description {
