@@ -16,26 +16,39 @@
     src: url("./../assets/fonts/Neucha-Regular.ttf");
 }
 
+:root {
+  --main-background: #ccc;
+  --white: #fff;
+  --translucent-white: #d7ccc0;
+  --light: #f5f4f0;
+  --main: #fe8a02;
+  --maindark: #42413c;
+  --dark: #2a2626;
+  --translucen-dark: #908d8b;
+  --brown: #b09a81;
+  --blue: #1085c5;
+}
+
   body {
     margin: 0;
     padding: 0;
     width: 1440px;
     height: 100%;
     font: 16px/1.6em 'Open Sans', sans-serif;
-    color: #2a2626;
+    color: var(--dark);
   }
 
   h1,
   h2,
   h3 {
     font-family: Neucha, serif;
+    margin: 0;
     line-height: 1.2em;
   }
 
   h1 {
     font-size: 72px;
     font-weight: 400;
-    margin-top: 0;
     margin-bottom: 181.2px;
   }
 
@@ -52,13 +65,13 @@
   }
   
   .orange {
-    color: #fe8a02;
+    color: var(--main);
   }
 
   .background {
     position: relative;
     overflow: hidden;
-    background-color: #F5F4F0;
+    background-color: var(--light);
   }
 
   .background::before {
@@ -115,9 +128,9 @@
 
     text-align: center;
 
-    background: #fe8a02;
+    background: var(--main);
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-weight: bold;
   }
 
@@ -138,7 +151,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px 30px;
-    background: #42413C;
+    background: var(--maindark);
   }
 
   .flex-nav-item {
@@ -146,7 +159,7 @@
     width: 350px;
     height: 323px;
     padding: 24px;
-    background:#F5F4F0;
+    background:var(--light);
   }
 
   .row-2 {
@@ -157,7 +170,7 @@
     padding: 0;
     background-color: transparent;
     font-size: 50px;
-    color: #fff;
+    color: var(--white);
   }
 
   .num {
@@ -174,22 +187,63 @@
   .flex-img-description {
     display: flex; 
     column-gap: 30px;
-    margin-bottom: 100px; 
   }
 
   .flex-column {
     display: flex;
     column-gap: 30px;
-    margin-top: 20px;
   }
 
   .flex-reverse {
     flex-direction: row-reverse;
   }
+  
+  .section-img {
+    position: relative;
+  }
 
+  .theme {
+    color: var(--translucen-dark);
+    font-size: 24px;
+    font-family: Neucha, serif;
+  }
+
+  .light.theme {
+    color: var(--translucent-white);
+  }
+
+  .section-name {
+    font-weight: normal;
+  }
+
+  .section-description {
+    font-size: 34px;
+    line-height: 1.2em;
+    font-family: Neucha, serif;
+  }
+
+  .columns-title {
+    font-size: 14px;
+    color: var(--white);
+    background: var(--brown);
+    padding-left: 10px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .light.columns-title {
+    color: var(--brown);
+    background: var(--white);
+  }  
+  
   .bg-brown {
     background-color:#B09A81;
   }
+
+  section:nth-child(2n) {
+    color: var(--white);
+  };
+
   
 
 
