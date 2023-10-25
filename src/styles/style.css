@@ -61,11 +61,13 @@
   
   .content {
     position: relative;
-
+   
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
     padding: 100px 0;
+
+    overflow: hidden;
   }
   
   .orange {
@@ -135,8 +137,7 @@
   }
 
   .artical-video {
-    position: relative;
-    height: 814px;
+    margin-bottom: -200px;
   }
 
   .video {
@@ -148,6 +149,7 @@
   }
 
   .bg-dark {
+    padding-top: 100px;
     background-color:var(--maindark);
   }
 
