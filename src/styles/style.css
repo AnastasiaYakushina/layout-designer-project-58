@@ -47,7 +47,7 @@
   h1 {
     font-size: 72px;
     font-weight: 400;
-    margin-bottom: 181px;
+    margin-bottom: 197px;
   }
 
   h2 {
@@ -61,7 +61,6 @@
   
   .content {
     position: relative;
-   
     max-width: 1110px;
     margin-left: auto;
     margin-right: auto;
@@ -112,6 +111,8 @@
   }
 
   .item-flex {
+    margin: -16px 0;
+    padding: 0;
     width: 50%;
   }
 
@@ -214,10 +215,6 @@
 
   .light.theme {
     color: var(--translucent-white);
-  }
-
-  .section-name {
-    font-weight: 400;
   }
 
   .section-description {
