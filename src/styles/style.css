@@ -47,7 +47,7 @@
   h1 {
     font-size: 72px;
     font-weight: 400;
-    margin-bottom: 180px;
+    margin-bottom: 181px;
   }
 
   h2 {
@@ -67,7 +67,7 @@
     margin-right: auto;
     padding: 100px 0;
 
-    overflow: hidden;
+    
   }
   
   .orange {
@@ -77,6 +77,8 @@
   .background {
     position: relative;
     background-color: var(--light);
+
+    overflow: hidden;
   }
 
   .background::before {
