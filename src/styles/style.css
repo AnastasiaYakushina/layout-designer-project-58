@@ -66,7 +66,7 @@
     margin-right: auto;
     padding: 100px 0;
 
-    
+    z-index: 2;
   }
   
   .orange {
@@ -76,7 +76,7 @@
   .background {
     position: relative;
     background-color: var(--light);
-
+    z-index: 1;
     overflow: hidden;
   }
 
@@ -111,7 +111,7 @@
   }
 
   .item-flex {
-    margin: -16px 0;
+    margin-top: -16px;
     padding: 0;
     width: 50%;
   }
@@ -142,7 +142,10 @@
   .artical-video {
     margin-bottom: -200px;
   }
-
+  
+  .video-desription {
+    margin-bottom: 30px;
+  }
   .video {
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   }
@@ -202,7 +205,6 @@
   }
   
   .section-img {
-    position: relative;
     vertical-align: middle;
   }
 
