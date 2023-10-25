@@ -47,7 +47,7 @@
   h1 {
     font-size: 72px;
     font-weight: 400;
-    margin-bottom: 165.4px;
+    margin-bottom: 180px;
   }
 
   h2 {
@@ -80,7 +80,7 @@
   .background::before {
     position: absolute;
 
-    width: 1440px;
+    width: 100%;
     height: 100%;
     
     background-image: url('./../assets/background.png');
@@ -147,11 +147,14 @@
     text-align: center;
   }
 
+  .bg-dark {
+    background-color:var(--maindark);
+  }
+
   .flex-nav {
     display: flex;
     flex-wrap: wrap;
     gap: 20px 30px;
-    background: var(--maindark);
   }
 
   .flex-nav-item {
@@ -234,7 +237,7 @@
   }  
   
   .bg-brown {
-    background-color:#B09A81;
+    background-color:var(--brown);
   }
 
   section:nth-child(2n) {
