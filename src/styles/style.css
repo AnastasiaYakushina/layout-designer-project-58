@@ -30,7 +30,6 @@
 }
 
   body {
-    width: 1440px;
     height: 100%;
     font: 16px/1.6em 'Open Sans', sans-serif;
     color: var(--dark);
@@ -60,6 +59,9 @@
   }
   
   .content {
+    position: relative;
+    overflow: hidden;
+    max-width: 1110px;
     padding: 100px 165px;
   }
   
@@ -69,7 +71,6 @@
 
   .background {
     position: relative;
-    overflow: hidden;
     background-color: var(--light);
   }
 
