@@ -62,7 +62,9 @@
     position: relative;
     overflow: hidden;
     max-width: 1110px;
-    padding: 100px 165px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 0;
   }
   
   .orange {
@@ -92,7 +94,7 @@
   .main-img {
     position: absolute;
     top: 55px;
-    right: -105px;
+    right: -270px;
     z-index: 1;
 
     height: 525px;
