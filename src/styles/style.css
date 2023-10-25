@@ -49,7 +49,7 @@
   h1 {
     font-size: 72px;
     font-weight: 400;
-    margin-bottom: 181.2px;
+    margin-bottom: 165.4px;
   }
 
   h2 {
@@ -99,18 +99,13 @@
   }
 
   .flex {
-    display: flex;  
-    flex-wrap: wrap;
+    display: flex;
     gap: 40px 30px;
     justify-content: flex-end;
   }
 
   .item-flex {
-    width: 540px;
-  }
-
-  .item-flex p:last-child {
-    margin-bottom: 0;
+    width: 50%;
   }
 
   .main-title {
@@ -124,6 +119,8 @@
     
     width: 148px;
     height: 48px;
+    margin-top: 40px;
+    margin-left: 570px;
     padding: 12px 0;
 
     text-align: center;
@@ -186,11 +183,6 @@
 
   .flex-img-description {
     display: flex; 
-    column-gap: 30px;
-  }
-
-  .flex-column {
-    display: flex;
     column-gap: 30px;
   }
 
