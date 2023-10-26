@@ -57,6 +57,7 @@
 
   h3 {
     font-size: 34px;
+    font-weight: 400;
   }
   
   .content {
@@ -65,8 +66,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 100px 0;
-
-    z-index: 2;
   }
   
   .orange {
@@ -76,7 +75,6 @@
   .background {
     position: relative;
     background-color: var(--light);
-    z-index: 1;
     overflow: hidden;
   }
 
@@ -111,6 +109,7 @@
 
   .flex > * {
     flex-basis: 50%;
+    vertical-align: middle;
   }
 
   .main-title {
@@ -119,16 +118,12 @@
   }
 
   .main-link {
-    display: block;
-    box-sizing: border-box;
-    
-    width: 148px;
-    height: 48px;
-    margin-top: 40px;
-    margin-left: 570px;
-    padding: 12px 0;
+    display: inline-block;
 
-    text-align: center;
+    margin-top: 24px;
+    margin-left: 570px;
+
+    padding: 12px 24px;
 
     background: var(--main);
     text-decoration: none;
@@ -143,6 +138,7 @@
   .video-desription {
     margin-bottom: 30px;
   }
+
   .video {
     filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
   }
@@ -177,7 +173,7 @@
   .nav-item-title {
     padding: 0;
     background-color: transparent;
-    font-size: 50px;
+    font-size: 52px;
     color: var(--white);
   }
 
@@ -201,9 +197,6 @@
     flex-direction: row-reverse;
   }
   
-  .section-img {
-    vertical-align: middle;
-  }
 
   .theme {
     margin: 0;
