@@ -140,7 +140,7 @@
   }
   
   .video-desription {
-    margin-top: 27px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
 
@@ -193,10 +193,6 @@
     padding-top: 16px;
   }
 
-  .flex-img-description {
-    display: flex; 
-    column-gap: 30px;
-  }
 
   .flex-reverse {
     flex-direction: row-reverse;
