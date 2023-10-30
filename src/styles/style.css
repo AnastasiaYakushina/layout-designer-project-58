@@ -111,7 +111,6 @@
 
   .flex > * {
     flex-basis: 50%;
-    vertical-align: middle;
   }
 
   .main-title {
@@ -187,12 +186,6 @@
   .text-nav {
     padding-top: 16px;
   }
-
-
-  .flex-reverse {
-    flex-direction: row-reverse;
-  }
-  
 
   .theme {
     margin: 0;
