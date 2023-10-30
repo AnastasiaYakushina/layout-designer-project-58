@@ -166,13 +166,8 @@
   .flex-nav > * {
     box-sizing: border-box;
     width: 350px;
-    height: 323px;
     padding: 24px;
     background:var(--light);
-  }
-
-  .row-2 {
-    height: 348px;
   }
 
   .nav-item-title {
