@@ -22,6 +22,7 @@
   --translucent-white: #d7ccc0;
   --light: #f5f4f0;
   --main: #fe8a02;
+  --dark-main: #ea7600;
   --maindark: #42413c;
   --dark: #2a2626;
   --translucen-dark: #908d8b;
@@ -31,19 +32,53 @@
 
 body {
   height: 100%;
+  margin: 0;
+
   font: 16px/1.6em "Open Sans", sans-serif;
   color: var(--dark);
-  margin: 0;
+}
+
+.background {
+  position: relative;
+
+  background-color: var(--light);
+
+  overflow: hidden;
+}
+
+.background::before {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url("./../assets/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  opacity: 0.1;
+
+  content: "";
+}
+
+.content {
+  position: relative;
+
+  max-width: 1110px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 100px 0;
 }
 
 h1,
 h2,
 h3 {
-  font-family: Neucha, serif;
   margin: 0;
+
   line-height: 1.2em;
-  color: var(--main);
+  font-family: Neucha, serif;
   font-weight: 400;
+  color: var(--main);
 }
 
 h1 {
@@ -74,12 +109,8 @@ p {
   font-size: 12px;
 }
 
-.content {
-  position: relative;
-  max-width: 1110px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 100px 0;
+.center {
+  text-align: center;
 }
 
 .dark {
@@ -90,90 +121,16 @@ p {
   color: var(--white);
 }
 
-.background {
-  position: relative;
-  background-color: var(--light);
-  overflow: hidden;
-}
-
-.background::before {
-  position: absolute;
-
-  width: 100%;
-  height: 100%;
-
-  background-image: url("./../assets/background.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  opacity: 0.1;
-
-  content: "";
-}
-
-.main-img {
-  position: absolute;
-  top: 55px;
-  right: -270px;
-  z-index: 1;
-
-  height: 525px;
-}
-
-.flex {
-  display: flex;
-  gap: 30px;
-}
-
-.flex-footer {
-  align-items: center;
-  justify-content: space-between;
-}
-
-.column > div {
-  flex-basis: 50%;
-}
-
-.main-title {
-  position: relative;
-  z-index: 2;
-
-  margin-bottom: 185px;
-}
-
-.main-link {
-  display: inline-block;
-
-  margin-top: 40px;
-  margin-left: 570px;
-
-  padding: 12px 24px;
-
-  background: var(--main);
-  text-decoration: none;
-  color: var(--white);
-  font-weight: bold;
-}
-
-.artical-video {
-  margin-bottom: -200px;
-}
-
-.video-desription {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
-.shadow {
-  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
-}
-
-.center {
-  text-align: center;
-}
-
 .pd-top-100 {
   padding-top: 100px;
+}
+
+.pd-55 {
+  padding: 55px;
+}
+
+.pd-right-55 {
+  padding-right: 55px;
 }
 
 .mg-top-60 {
@@ -188,14 +145,6 @@ p {
   margin-bottom: 9px;
 }
 
-.pd-55 {
-  padding: 55px;
-}
-
-.pd-right-55 {
-  padding-right: 55px;
-}
-
 .bg-dark {
   background-color: var(--maindark);
 }
@@ -204,8 +153,95 @@ p {
   background-color: var(--brown);
 }
 
-.bg-orange {
-  background-color: var(--main);
+/* Header */
+.main-img {
+  position: absolute;
+  top: 55px;
+  right: -270px;
+  z-index: 1;
+
+  height: 525px;
+}
+
+.main-title {
+  position: relative;
+  z-index: 2;
+
+  margin-bottom: 185px;
+}
+
+/* Header - end */
+
+/* Основной Flex */
+.flex {
+  display: flex;
+  gap: 30px;
+}
+
+.column > div {
+  flex-basis: 50%;
+}
+
+/* Основной Flex - end */
+
+/* Стили кнопок */
+.button {
+  font-weight: bold;
+
+  color: var(--white);
+  background: var(--main);
+
+  text-decoration: none;
+}
+
+.button:hover {
+  background: var(--dark-main);
+}
+
+.main-link {
+  display: inline-block;
+
+  margin-top: 40px;
+  margin-left: 570px;
+  padding: 12px 24px;
+}
+
+.button-email {
+  position: relative;
+  flex-shrink: 0;
+
+  width: 70px;
+  height: 50px;
+  padding: 0;
+  border: 0;
+}
+
+.button-email::before {
+  position: absolute;
+  top: 13px;
+  left: 23px;
+
+  width: 24px;
+  height: 24px;
+
+  background-image: url("./../assets/send.svg");
+  background-size: cover;
+
+  content: "";
+}
+
+/* Стили кнопок - end */
+
+.artical-video {
+  margin-bottom: -200px;
+}
+
+.video-desription {
+  margin-top: 30px 0;
+}
+
+.shadow {
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
 .flex-nav {
@@ -273,6 +309,11 @@ section:nth-child(2n) {
   color: var(--white);
 }
 
+.flex-footer {
+  align-items: center;
+  justify-content: space-between;
+}
+
 .flex-email {
   display: flex;
   justify-content: space-between;
@@ -285,26 +326,4 @@ section:nth-child(2n) {
   flex-grow: 1;
   border: 0;
   padding: 15px;
-}
-
-.button {
-  position: relative;
-  flex-shrink: 0;
-  width: 70px;
-  height: 50px;
-  border: 0;
-  padding: 0;
-}
-
-.button::before {
-  position: absolute;
-  top: 13px;
-  left: 23px;
-  width: 24px;
-  height: 24px;
-
-  background-image: url("./../assets/send.svg");
-  background-size: cover;
-
-  content: "";
 }
