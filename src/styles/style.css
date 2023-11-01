@@ -190,8 +190,7 @@
   .theme {
     margin: 0;
     color: var(--translucen-dark);
-    font-size: 24px;
-    font-family: Neucha, serif;
+    font: 24px/1.2 Neucha, serif;
   }
 
   .light.theme {
@@ -199,7 +198,6 @@
   }
 
   .section-description {
-    margin-top: 30px;
     font-size: 34px;
     line-height: 1.2em;
     font-family: Neucha, serif;
@@ -207,9 +205,10 @@
 
   .columns-title {
     font-size: 14px;
+    line-height: 1.2em;
     color: var(--white);
     background: var(--brown);
-    padding-left: 10px;
+    padding: 5px 10px;
     margin-top: 100px;
     margin-bottom: 0;
   }
